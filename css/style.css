@@ -1,0 +1,108 @@
+/*
+ *
+ * App CSS
+ *
+ * Author: Hyview
+ *
+ * Date Created: 9/9/2015; Last Updated: 9/10/15
+ *
+ */
+
+body {
+ 	font-family: Arial, Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+	font-style: normal;
+  background-image: url("../images/bg_clouds.jpg");
+	background-attachment: fixed;
+}
+
+.container {
+	background-color: #fff;
+	opacity: 0.9;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pg-divider {
+	width: 95%;
+	border-top: 1px solid #0f0f0f;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* header */
+#site-logo {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#page-title {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* main: gallery */
+main {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+main .row {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.album-title {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.gallery ul li {
+	float: left;
+	margin: 10px;
+	list-style-type: none;
+}
+
+.gallery img {
+	display: block;
+	padding: 5px;
+	background: #42517f;
+	border: 1px solid #99adeb;
+	box-shadow: 1px 1px 2px #000;
+}
+
+.gallery img:hover {
+	border: 1px solid #fff;
+}
+
+/* footer */
+footer {
+	padding: 15px 0;
+}
+
+.copyright {
+	text-align: center;
+	font-size:85%;
+}
+
+@media (max-width:480px) {
+	.xs-hide { /* hide this class in smart phone */
+		display: none;
+	}
+}
+
+@media (max-width:767px){ /* col-xs-* */
+}
+
+@media (min-width:768px){ /* col-sm-* */
+}
+
+@media (min-width: 992px) { /* col-md-* */
+}
+
+@media (min-width: 1200px) { /* col-ls-* */
+}
