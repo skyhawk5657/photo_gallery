@@ -25,6 +25,12 @@
 	<script src="<?php echo $fb_url; ?>source/helpers/jquery.fancybox-buttons.js"></script>
 	<script src="<?php echo $fb_url; ?>source/helpers/jquery.fancybox-media.js"></script>
 	<script src="<?php echo $fb_url; ?>source/helpers/jquery.fancybox-thumbs.js"></script>		
+	<script type="text/javascript" src="<?php echo $js_url; ?>grids.js"></script>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.element').responsiveEqualHeightGrid();	
+		});
+	</script>
 	<script>
 		$(document).ready(function() { /* standard lightbox */
 			$(".fancybox").fancybox({

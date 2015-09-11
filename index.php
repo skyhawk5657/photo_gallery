@@ -27,7 +27,7 @@ $thumbs_width = 200;
 		<header>
 			<div class="row">
 				<div id="site-logo" class="col-sm-3">
-					<a href="http://www.hyview.com/"><img src="<?php echo $img_url; ?>logo.png"></a>
+					<a href="<?php echo $site["url"]; ?>"><img src="<?php echo $img_url; ?>logo.png"></a>
 				</div>
 				<div id="page-title" class="col-xs-12 col-sm-9">
 					<h1><?php echo $page_title; ?></h1>
@@ -41,7 +41,8 @@ $thumbs_width = 200;
 				<div class="gallery">
 					<p class="album-title">Leo J. Ryan Memorial Park<br>San Mateo, CA</p>
 					<?php /** generate photo gallery **/
-					$html_gc = '<ul>'; // initialize and start building Gallery HTML codes
+					//$html_gc = '<ul>'; // initialize and start building Gallery HTML codes
+					$html_gc = ''; // initialize and start building Gallery HTML codes
 					$image_files = get_files($images_dir);
 					if(count($image_files)) {
 						$index = 0;
@@ -54,10 +55,9 @@ $thumbs_width = 200;
 									make_thumb($images_dir.$file,$thumbnail_image,$thumbs_width);
 								}
 							}
-							//$html_gc .= "<li><a href=\"".$images_dir.$file."\" class=\"fancybox\" rel=\"gallery\" title=\"".$file."\"><img src=\"".$thumbnail_image."\" /></a></li>\r\n";
-							$html_gc .= "<li><a href=\"".$images_dir.$file."\" class=\"fancybox-button\" rel=\"fancybox-button\" title=\"".$file."\"><img src=\"".$thumbnail_image."\" /></a></li>\r\n";
+							$html_gc .= "<div class=\"element\"><a href=\"".$images_dir.$file."\" class=\"fancybox-button\" rel=\"fancybox-button\" title=\"".$file."\"><img src=\"".$thumbnail_image."\" /></a></div>\r\n";
 						}
-						$html_gc .= "</ul>\r\n";
+						$html_gc .= "\r\n";
 						echo $html_gc;
 					}
 					else {
