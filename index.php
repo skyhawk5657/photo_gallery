@@ -41,9 +41,9 @@ $thumbs_width = 200;
 				<div class="gallery">
 					<p class="album-title">Leo J. Ryan Memorial Park<br>San Mateo, CA</p>
 					<?php /** generate photo gallery **/
-					//$html_gc = '<ul>'; // initialize and start building Gallery HTML codes
 					$html_gc = ''; // initialize and start building Gallery HTML codes
 					$image_files = get_files($images_dir);
+					sort($image_files); // sort file name in ascending order
 					if(count($image_files)) {
 						$index = 0;
 						foreach($image_files as $index=>$file) {
