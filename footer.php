@@ -7,6 +7,7 @@
  * Date created: 9/9/2015;  Last updated: 9/10/2015
  */
 ?>
+
 		<footer>
 			<div class="copyright">
 				<span>Copyright &copy; <?php echo date("Y"); ?> 
@@ -14,7 +15,7 @@
 				<span class="xs-hide">All Rights Reserved</span>
 			</div>
 		</footer>
-	</div>
+	</div><!-- /container -->
 	
 	<!-- Add jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

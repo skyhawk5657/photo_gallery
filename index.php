@@ -72,7 +72,6 @@ $thumbs_width = 200;
 		<?php
 		require_once('footer.php');
 		?>
-	</div><!-- /container -->
-	
+		
 </body>
 </html>
