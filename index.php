@@ -55,7 +55,6 @@ require_once('header.php');
 					<h1><?php echo $page_title; ?></h1>
 				</div>
 			</div>
-			<div class="pg-divider"></div>
 		</header>
 
 		<main>
@@ -66,10 +65,9 @@ require_once('header.php');
 						<?php echo $html_gc; ?>
 						
 					</div>
-				</div><!-- /gallery -->				
-			</div><!-- /row -->
-		</main>
-		<div class="pg-divider"></div>
+				</div><!-- /row -->
+			</div><!-- /gallery -->
+		</main>		
 		
 		<?php
 		require_once('footer.php');

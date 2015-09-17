@@ -1,118 +1,101 @@
+@charset "UTF-8";
 /*
- *
  * App CSS
- *
  * Author: Hyview
- *
- * Date Created: 9/9/2015; Last Updated: 9/10/15
- *
+ * Date Created: 9/9/2015; Last Updated: 9/17/15
  */
-
 body {
- 	font-family: Arial, Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
-	font-style: normal;
+  font-family: Arial, Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+  font-family: Arial, Helvetica, "WenQuanYi Zen Hei", "LiHei Pro", "Microsoft JhengHei", DFKai-SB, sans-serif;
+  font-style: normal;
   background-image: url("../images/bg_clouds.jpg");
-	background-attachment: fixed;
-}
+  background-attachment: fixed; }
 
 .container {
-	background-color: #fff;
-	opacity: 0.9;
-}
+  opacity: 0.9; }
 
 img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .pg-divider {
-	width: 100%;
-	border-top: 1px solid #0f0f0f;
-	margin-right: auto;
-	margin-left: auto;
-}
+  width: 100%;
+  border-top: 1px solid #0f0f0f;
+  margin-right: auto;
+  margin-left: auto; }
 
 /* header */
-#site-logo {
-	text-align: center;
-	vertical-align: middle;
-}
-
-#page-title {
-	text-align: center;
-	vertical-align: middle;
-}
+header {
+  background-color: none; }
+  header #site-logo {
+    text-align: center;
+    vertical-align: middle; }
+  header #page-title {
+    color: black;
+    font-family: Lobster;
+    text-align: center;
+    vertical-align: middle; }
 
 /* main: gallery */
 main {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	overflow: hidden;
-}
+  background-color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px; }
+  main .row {
+    padding-right: 15px;
+    padding-left: 15px; }
 
-main .row {
-	padding-right: 15px;
-	padding-left: 15px;
-}
-
-.album-title {
-	font-size: 1.5em;
-	text-align: center;
-}
-
-.gallery{
-	max-width:95%;
-	margin:40px auto;
-}
-
-.element {
-	max-width:100%;
-	margin-bottom:20px;
-	/*margin-right:10px;
-	margin-left:10px;*/
-	padding:10px;
-}
-
-.gallery img {
-	display: block;
-	margin-right:auto;
-	margin-left:auto;
-	border:solid;
-	border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
-	border-width: 1px 2px 2px 1px;
-	background-color:white;
-	padding:8px;	
-}
-
-.gallery img:hover {
-	border: 2px solid #bb6635;
-}
+.gallery {
+  max-width: 95%;
+  margin: 0px auto; }
+  .gallery .album-title {
+    color: white;
+    font-size: 1.5em;
+    text-align: center; }
+  .gallery .element {
+    max-width: 100%;
+    margin: 10px 10px 20px; }
+  .gallery img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid;
+    border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+    border-width: 1px 2px 2px 1px;
+    background-color: white;
+    padding: 8px; }
+    .gallery img hover {
+      border: 2px solid #bb6635; }
 
 /* footer */
 footer {
-	padding: 15px 0;
-}
+  padding: 15px 0; }
+  footer .copyright {
+    max-width: 460px;
+    background: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 85%; }
 
-.copyright {
-	text-align: center;
-	font-size:85%;
-}
+@media (max-width: 480px) {
+  .xs-hide {
+    /* hide this class in smart phone */
+    display: none; } }
 
-@media (max-width:480px) {
-	.xs-hide { /* hide this class in smart phone */
-		display: none;
-	}
-}
-
-@media (max-width:767px){ /* col-xs-* */
-}
-
-@media (min-width:768px){ /* col-sm-* */
-}
-
-@media (min-width: 992px) { /* col-md-* */
-}
-
-@media (min-width: 1200px) { /* col-ls-* */
-}
+/*# sourceMappingURL=style.css.map */

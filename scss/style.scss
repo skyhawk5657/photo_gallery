@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*
+ * App CSS
+ * Author: Hyview
+ * Date Created: 9/9/2015; Last Updated: 9/17/15
+ */
+
+// Border radius shorthand
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+$main_bgc: black;
+$body_bgi: url("../images/bg_clouds.jpg");
+
+body {
+ 	font-family: Arial, Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+	font-family: Arial, Helvetica, "WenQuanYi Zen Hei", "LiHei Pro", "Microsoft JhengHei", DFKai-SB, sans-serif;
+	font-style: normal;
+  background-image: $body_bgi;
+	background-attachment: fixed;
+}
+
+.container {
+	opacity: 0.9;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pg-divider {
+	width: 100%;
+	border-top: 1px solid #0f0f0f;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* header */
+header {
+	background-color: none;
+	
+	#site-logo {
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	#page-title {
+		color: black;
+		font-family: Lobster;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
+/* main: gallery */
+main {
+	background-color: $main_bgc;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	overflow: hidden;
+	@include border-radius(15px);
+	
+	.row {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+.gallery {
+	max-width:95%;
+	margin:0px auto;
+
+	.album-title {
+		color: white;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.element {
+		max-width:100%;
+		margin: 10px 10px 20px;
+	}
+	
+	img {
+		display: block;
+		margin-right:auto;
+		margin-left:auto;
+		border:solid;
+		border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+		border-width: 1px 2px 2px 1px;
+		background-color:white;
+		padding:8px;	
+		
+		hover {
+			border: 2px solid #bb6635;
+		}
+	}
+}
+
+/* footer */
+footer {
+	padding: 15px 0;
+
+	.copyright {
+		max-width:460px;
+		background:#fff;
+		@include border-radius(15px);
+		margin-left:auto;
+		margin-right:auto;
+		padding-top:10px;
+		padding-bottom:10px;
+		text-align:center;
+		font-size:85%;
+	}
+}
+
+@media (max-width:480px) {
+	.xs-hide { /* hide this class in smart phone */
+		display: none;
+	}
+}

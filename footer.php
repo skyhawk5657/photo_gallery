@@ -7,7 +7,6 @@
  * Date created: 9/9/2015;  Last updated: 9/10/2015
  */
 ?>
-
 		<footer>
 			<div class="copyright">
 				<span>Copyright &copy; <?php echo date("Y"); ?> 
