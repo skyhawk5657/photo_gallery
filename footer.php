@@ -4,9 +4,10 @@
  * 
  * Author: Hyview
  * 
- * Date created: 9/9/2015;  Last updated: 9/10/2015
+ * Date created: 9/9/2015;  Last updated: 9/17/2015
  */
 ?>
+
 		<footer>
 			<div class="copyright">
 				<span>Copyright &copy; <?php echo date("Y"); ?> 
@@ -30,8 +31,7 @@
 		jQuery(function($) {
 			$('.element').responsiveEqualHeightGrid();	
 		});
-	</script>
-	<script>
+
 		$(document).ready(function() { /* standard lightbox */
 			$(".fancybox").fancybox({
 				openEffect	: 'none',
@@ -39,18 +39,6 @@
 			});
 		});
 
-		$(document).ready(function() { /* lightbox with button helper */
-			$(".fancybox-button").fancybox({
-				prevEffect		: 'none',
-				nextEffect		: 'none',
-				closeBtn		: false,
-				helpers		: {
-					title	: { type : 'inside' },
-					buttons	: {}
-				}
-			});
-		});
-		
 		$(".fancybox").fancybox({
 			helpers : {
 				overlay : {

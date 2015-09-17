@@ -17,6 +17,7 @@
 
 $main_bgc: black;
 $body_bgi: url("../images/bg_clouds.jpg");
+$spacer:15px;
 
 body {
  	font-family: Arial, Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
@@ -47,31 +48,48 @@ img.center {
 header {
 	background-color: none;
 	
+	.row {
+		margin-right:0px; /* to remove -15px from Bootstrap */
+		margin-left:0px;  /* to remove -15px from Bootstrap */
+		padding-top:$spacer;		
+	}
+	
 	#site-logo {
-		text-align: center;
-		vertical-align: middle;
+		background-color:#fff;
+		@include border-radius($spacer - 5px);
+		text-align:center;
+		vertical-align:middle;
+		
+		a {
+			max-width:300px;
+			
+			img {
+				margin-left:auto;
+				margin-right:auto;			
+			}
+		}
 	}
 	
 	#page-title {
-		color: black;
-		font-family: Lobster;
-		text-align: center;
-		vertical-align: middle;
+		color:black;
+		font-family:Lobster;
+		text-align:center;
+		vertical-align:middle;
 	}
 }
 
 /* main: gallery */
 main {
 	background-color: $main_bgc;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding-top: 15px;
+	margin-top: $spacer;
+	margin-bottom: $spacer;
+	padding-top: $spacer;
 	overflow: hidden;
-	@include border-radius(15px);
+	@include border-radius($spacer);
 	
 	.row {
-		padding-right: 15px;
-		padding-left: 15px;
+		padding-right: $spacer;
+		padding-left: $spacer;
 	}
 }
 
@@ -108,16 +126,16 @@ main {
 
 /* footer */
 footer {
-	padding: 15px 0;
+	margin-bottom:$spacer;
 
 	.copyright {
 		max-width:460px;
 		background:#fff;
-		@include border-radius(15px);
+		@include border-radius($spacer);
 		margin-left:auto;
 		margin-right:auto;
-		padding-top:10px;
-		padding-bottom:10px;
+		padding-top:$spacer - 5px;
+		padding-bottom:$spacer - 5px;
 		text-align:center;
 		font-size:85%;
 	}

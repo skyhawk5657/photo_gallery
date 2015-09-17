@@ -23,6 +23,7 @@ $image_files = get_files($images_dir);
 sort($image_files); // sort file name in ascending order
 if(count($image_files)) {
 	$index = 0;
+	$html_gc = "";
 	foreach($image_files as $index=>$file) {
 		$index++;
 		$thumbnail_image = $thumbs_dir.$file;
@@ -32,7 +33,7 @@ if(count($image_files)) {
 				make_thumb($images_dir.$file,$thumbnail_image,$thumbs_width);
 			}
 		}
-		$html_gc .= "<div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3\"><div class=\"element\"><a href=\"".$images_dir.$file."\" class=\"fancybox-button\" rel=\"fancybox-button\" title=\"".$file."\"><img src=\"".$thumbnail_image."\" /></a></div></div>\r\n";
+		$html_gc .= "<div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3\"><div class=\"element\"><a href=\"".$images_dir.$file."\" class=\"fancybox\" rel=\"fancybox\"><img src=\"".$thumbnail_image."\" /></a></div></div>\r\n";
 	}
 	$html_gc .= "\r\n";
 }
@@ -48,8 +49,8 @@ require_once('header.php');
 	<div class="container">
 		<header>
 			<div class="row">
-				<div id="site-logo" class="col-sm-3">
-					<a href="<?php echo $site["url"]; ?>"><img src="<?php echo $img_url; ?>logo.png"></a>
+				<div id="site-logo" class="col-xs-12 col-sm-3">
+					<a href="<?php echo $site["url"]; ?>"><img class="img-responsive" src="<?php echo $img_url; ?>logo.png"></a>
 				</div>
 				<div id="page-title" class="col-xs-12 col-sm-9">
 					<h1><?php echo $page_title; ?></h1>
@@ -61,10 +62,7 @@ require_once('header.php');
 			<div class="gallery">
 				<p class="album-title"><?php echo $album_title; ?></p>
 				<div class="row">					
-					
-						<?php echo $html_gc; ?>
-						
-					</div>
+						<?php echo $html_gc; ?>						
 				</div><!-- /row -->
 			</div><!-- /gallery -->
 		</main>		
