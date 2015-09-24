@@ -4,7 +4,7 @@
  * 
  * This app will retrieve all image files from a given folder and display it as a gallery.
  *
- * Date created: 9/9/2015; Last updated: 9/22/2015
+ * Date created: 9/9/2015; Last updated: 9/22/2015; touch 6/16/2018
  */
 
 require_once('config.php');
@@ -83,6 +83,11 @@ require_once('header.php');
 				</div>
 			</div>
 		</header>
+
+		<div>
+			<p>Name: <input type="text" ng-model="name"></p>
+			<p ng-bind="name"></p>
+		</div>
 
 		<main class="gallery">
 			<p class="album-title"><?php echo $album_title; ?></p>				
