@@ -2,9 +2,9 @@
 /**
  * App Configuration
  *
-  * Author: Hyview
+ * Author: Hyview
  *
- * Date created: 9/9/2015; Last updated: 9/10/2015
+ * Date created: 9/9/2015; Last updated: 9/23/2015
  */
  
 // Determine whether we're working on a local server or on the real server:
@@ -32,9 +32,10 @@ if ( $local ) { // local server
 	);
 }
 
-$app_url = $site["url"]."responsive-photo-gallery/";
+$app_url = $site["url"]."photo_gallery/";
 $img_url = $app_url."images/";
 $css_url = $app_url."css/";
+$scss_url = $app_url."scss/";
 $js_url = $app_url."js/";
 $fb_url = $app_url."fancybox/";
 
