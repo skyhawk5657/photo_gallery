@@ -2,9 +2,13 @@
 
 Photo Gallery bult with Bootstrap and FancyBox
 
-__9/23/2015__
+__9/24/2015__
 
 * v 0.50: Tabbed Gallery
+
+
+__9/23/2015__
+
 * Set up changelog.md
 
 
